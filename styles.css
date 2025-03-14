@@ -3,12 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
-    :root {
-        --laranja-claro: #FF862A;
-        --alto-contraste-fundo: #000000;
-        --alto-contraste-texto: #ffffff;
-        --alto-contraste-link: #ffd700;
-    }
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -147,7 +144,7 @@ h2 {
 .menu-acessibilidade{
     position: fixed;
     top:2rem;
-    right: 20px;
+    right:20px;
     z-index: 1000;
 }
 
@@ -156,11 +153,17 @@ h2 {
     transform-origin: right center;
 }
 
-.opcao-acessibilidade button{
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
 
-.apresenta-lista{ 
+.apresenta-lista{
     display: none;
 }
 
@@ -198,4 +201,3 @@ h2 {
 .alto-contraste .fundo-galeria {
     background: none;
 }
-
